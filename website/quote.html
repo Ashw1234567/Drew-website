@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Request a Quote — All Style Cabinets</title>
+  <meta name="description" content="Tell us about your project. We'll come back with a configuration, finish samples, and a quote — typically within two business days." />
+  <meta name="theme-color" content="#1a1f24" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="/assets/css/styles.css" />
+
+  <link rel="icon" type="image/svg+xml" href='data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect width="32" height="32" rx="6" fill="%231a1f24"/><text x="50%25" y="58%25" text-anchor="middle" font-family="Inter,sans-serif" font-weight="800" font-size="13" fill="white">AS</text></svg>' />
+</head>
+<body>
+
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="/" class="nav__brand" aria-label="All Style Cabinets — home">
+        <span class="nav__brand-mark" aria-hidden="true">AS</span>
+        <span>ALL&nbsp;STYLE</span>
+      </a>
+      <nav aria-label="Primary">
+        <ul class="nav__links" id="nav-links">
+          <li><a class="nav__link" href="/#patio">Patio</a></li>
+          <li><a class="nav__link" href="/#garage">Garage</a></li>
+          <li><a class="nav__link" href="/#event">Event</a></li>
+          <li><a class="nav__link" href="/#marine">Marine</a></li>
+          <li><a class="nav__link" href="/#flood">Flood&nbsp;Risk</a></li>
+          <li><a class="nav__link" href="/#partnership">Tru&nbsp;Spec</a></li>
+          <li><a class="nav__cta" href="/quote.html" aria-current="page">Request a Quote <span aria-hidden="true">→</span></a></li>
+        </ul>
+      </nav>
+      <button class="nav__toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main class="form-page">
+    <div class="container">
+      <div style="text-align: center; max-width: 640px; margin: 0 auto 2.5rem;">
+        <span class="eyebrow reveal">Request a Quote</span>
+        <h1 class="section-title reveal" data-delay="1" style="margin: 0 auto 1rem;">Tell us about your project.</h1>
+        <p class="section-lede reveal" data-delay="2" style="margin: 0 auto;">
+          We'll come back with a configuration recommendation, finish samples, and an estimate — typically within two business days. Drew personally reviews every quote.
+        </p>
+      </div>
+
+      <form class="form-card reveal" id="quote-form" novalidate>
+        <div class="form-row">
+          <div class="form-field">
+            <label for="firstName">First name</label>
+            <input id="firstName" name="firstName" type="text" autocomplete="given-name" required />
+          </div>
+          <div class="form-field">
+            <label for="lastName">Last name</label>
+            <input id="lastName" name="lastName" type="text" autocomplete="family-name" required />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required />
+          </div>
+          <div class="form-field">
+            <label for="phone">Phone</label>
+            <input id="phone" name="phone" type="tel" autocomplete="tel" />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-field">
+            <label for="postal">City / Postal code</label>
+            <input id="postal" name="postal" type="text" autocomplete="postal-code" />
+          </div>
+          <div class="form-field">
+            <label for="role">I am a…</label>
+            <select id="role" name="role">
+              <option value="">Select one</option>
+              <option>Homeowner</option>
+              <option>Designer / Architect</option>
+              <option>Contractor / Builder</option>
+              <option>Venue / Event partner</option>
+              <option>Other</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-row form-row--single">
+          <div class="form-field">
+            <label>Project category &nbsp;<span style="font-weight: 400; text-transform: none; letter-spacing: 0; color: var(--brand-graphite);">(select all that apply)</span></label>
+            <div class="form-checkboxes" id="categories">
+              <label class="form-check"><input type="checkbox" name="category" value="patio" /><span>Patio Cabinetry</span></label>
+              <label class="form-check"><input type="checkbox" name="category" value="garage" /><span>Garage Cabinetry</span></label>
+              <label class="form-check"><input type="checkbox" name="category" value="event" /><span>Event Cabinetry</span></label>
+              <label class="form-check"><input type="checkbox" name="category" value="marine" /><span>Marine Cabinetry</span></label>
+              <label class="form-check"><input type="checkbox" name="category" value="flood" /><span>Flood Risk Environments</span></label>
+              <label class="form-check"><input type="checkbox" name="category" value="plein" /><span>Plein — Outdoor Sub-brand</span></label>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-field">
+            <label for="timeline">Timeline</label>
+            <select id="timeline" name="timeline">
+              <option value="">Select one</option>
+              <option>Within 1 month</option>
+              <option>1–3 months</option>
+              <option>3–6 months</option>
+              <option>6+ months / Planning phase</option>
+            </select>
+          </div>
+          <div class="form-field">
+            <label for="budget">Approx. budget</label>
+            <select id="budget" name="budget">
+              <option value="">Select one</option>
+              <option>Under $10K</option>
+              <option>$10K – $25K</option>
+              <option>$25K – $50K</option>
+              <option>$50K – $100K</option>
+              <option>$100K +</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-row form-row--single">
+          <div class="form-field">
+            <label for="message">Tell us about your space</label>
+            <textarea id="message" name="message" placeholder="Square footage, layout, finishes you're drawn to, must-haves, anything that matters…"></textarea>
+          </div>
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" class="btn btn--primary">Send to Drew <span class="btn__arrow">→</span></button>
+          <a href="/" class="btn btn--outline">Back to site</a>
+        </div>
+
+        <div class="form-success" id="form-success" role="status" aria-live="polite">
+          <strong>Thanks — your request is in.</strong> Drew will personally review your project and follow up within two business days. Watch your inbox.
+        </div>
+      </form>
+    </div>
+  </main>
+
+  <footer class="footer" style="margin-top: 4rem;">
+    <div class="container footer__bottom" style="margin: 0; padding-top: 0;">
+      <span>© <span id="year">2026</span> All Style Cabinets. All rights reserved.</span>
+      <span>In partnership with Tru Spec.</span>
+    </div>
+  </footer>
+
+  <script src="/assets/js/script.js" defer></script>
+</body>
+</html>
